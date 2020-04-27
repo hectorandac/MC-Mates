@@ -1,0 +1,297 @@
+---- Minecraft Crash Report ----
+// Why did you do that?
+
+Time: 4/25/20 5:19 AM
+Description: Watching Server
+
+java.lang.Error: ServerHangWatchdog detected that a single server tick took 60.06 seconds (should be max 0.05)
+	at net.minecraft.network.datasync.EntityDataManager.func_187225_a(EntityDataManager.java:118) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.entity.Entity.func_70083_f(Entity.java:1925) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.entity.Entity.func_70093_af(Entity.java:1844) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.util.math.shapes.EntitySelectionContext.<init>(EntitySelectionContext.java:33) ~[?:?] {re:classloading}
+	at net.minecraft.util.math.shapes.ISelectionContext.func_216374_a(ISelectionContext.java:13) ~[?:?] {re:classloading}
+	at net.minecraft.world.IWorldReader.func_223438_b(IWorldReader.java:141) ~[?:?] {re:classloading}
+	at net.minecraft.world.IWorldReader.func_217352_b(IWorldReader.java:131) ~[?:?] {re:classloading}
+	at net.minecraft.world.IWorldReader.func_211156_a(IWorldReader.java:123) ~[?:?] {re:classloading}
+	at net.minecraft.world.IWorldReader.func_195586_b(IWorldReader.java:119) ~[?:?] {re:classloading}
+	at net.minecraft.pathfinding.WalkNodeProcessor.func_186332_a(WalkNodeProcessor.java:187) ~[?:?] {re:classloading}
+	at net.minecraft.pathfinding.WalkNodeProcessor.func_222859_a(WalkNodeProcessor.java:108) ~[?:?] {re:classloading}
+	at net.minecraft.pathfinding.PathFinder.func_224779_a(SourceFile:91) ~[?:?] {re:classloading}
+	at net.minecraft.pathfinding.PathFinder.func_224775_a(SourceFile:45) ~[?:?] {re:classloading}
+	at net.minecraft.pathfinding.PathNavigator.func_225464_a(PathNavigator.java:121) ~[?:?] {re:classloading}
+	at net.minecraft.pathfinding.PathNavigator.func_179680_a(PathNavigator.java:97) ~[?:?] {re:classloading}
+	at net.minecraft.pathfinding.GroundPathNavigator.func_179680_a(SourceFile:65) ~[?:?] {re:classloading}
+	at net.minecraft.pathfinding.PathNavigator.func_225466_a(PathNavigator.java:87) ~[?:?] {re:classloading}
+	at net.minecraft.pathfinding.PathNavigator.func_75492_a(PathNavigator.java:133) ~[?:?] {re:classloading}
+	at net.minecraft.entity.ai.goal.FleeSunGoal.func_75249_e(SourceFile:67) ~[?:?] {re:classloading}
+	at net.minecraft.entity.passive.FoxEntity$FindShelterGoal.func_75249_e(FoxEntity.java:870) ~[?:?] {re:classloading}
+	at net.minecraft.entity.ai.goal.PrioritizedGoal.func_75249_e(SourceFile:41) ~[?:?] {re:classloading}
+	at net.minecraft.entity.ai.goal.GoalSelector.func_220877_a(SourceFile:75) ~[?:?] {re:classloading}
+	at net.minecraft.entity.ai.goal.GoalSelector$$Lambda$3419/1456358323.accept(Unknown Source) ~[?:?] {}
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[?:1.8.0_252-ea] {}
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[?:1.8.0_252-ea] {}
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[?:1.8.0_252-ea] {}
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[?:1.8.0_252-ea] {}
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[?:1.8.0_252-ea] {}
+	at java.util.Iterator.forEachRemaining(Iterator.java:116) ~[?:1.8.0_252-ea] {}
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801) ~[?:1.8.0_252-ea] {}
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[?:1.8.0_252-ea] {}
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[?:1.8.0_252-ea] {}
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[?:1.8.0_252-ea] {}
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[?:1.8.0_252-ea] {}
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:1.8.0_252-ea] {}
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:485) ~[?:1.8.0_252-ea] {}
+	at net.minecraft.entity.ai.goal.GoalSelector.func_75774_a(SourceFile:69) ~[?:?] {re:classloading}
+	at net.minecraft.entity.MobEntity.func_70626_be(MobEntity.java:590) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.entity.LivingEntity.func_70636_d(LivingEntity.java:2186) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.entity.MobEntity.func_70636_d(MobEntity.java:460) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.entity.AgeableEntity.func_70636_d(SourceFile:140) ~[?:?] {re:classloading}
+	at net.minecraft.entity.passive.AnimalEntity.func_70636_d(SourceFile:44) ~[?:?] {re:classloading}
+	at net.minecraft.entity.passive.FoxEntity.func_70636_d(FoxEntity.java:204) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.entity.LivingEntity.func_70071_h_(LivingEntity.java:2032) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.entity.MobEntity.func_70071_h_(MobEntity.java:274) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.entity.passive.FoxEntity.func_70071_h_(FoxEntity.java:475) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.world.server.ServerWorld.func_217479_a(ServerWorld.java:587) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.world.server.ServerWorld$$Lambda$3407/565647961.accept(Unknown Source) ~[?:?] {}
+	at net.minecraft.world.World.func_217390_a(World.java:684) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.world.server.ServerWorld.func_72835_b(ServerWorld.java:394) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:829) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:324) ~[?:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:764) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:622) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_252-ea] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server Watchdog
+Stacktrace:
+	at net.minecraft.network.datasync.EntityDataManager.func_187225_a(EntityDataManager.java:118)
+	at net.minecraft.entity.Entity.func_70083_f(Entity.java:1925)
+	at net.minecraft.entity.Entity.func_70093_af(Entity.java:1844)
+	at net.minecraft.util.math.shapes.EntitySelectionContext.<init>(EntitySelectionContext.java:33)
+	at net.minecraft.util.math.shapes.ISelectionContext.func_216374_a(ISelectionContext.java:13)
+	at net.minecraft.world.IWorldReader.func_223438_b(IWorldReader.java:141)
+	at net.minecraft.world.IWorldReader.func_217352_b(IWorldReader.java:131)
+	at net.minecraft.world.IWorldReader.func_211156_a(IWorldReader.java:123)
+	at net.minecraft.world.IWorldReader.func_195586_b(IWorldReader.java:119)
+	at net.minecraft.pathfinding.WalkNodeProcessor.func_186332_a(WalkNodeProcessor.java:187)
+	at net.minecraft.pathfinding.WalkNodeProcessor.func_222859_a(WalkNodeProcessor.java:108)
+	at net.minecraft.pathfinding.PathFinder.func_224779_a(SourceFile:91)
+	at net.minecraft.pathfinding.PathFinder.func_224775_a(SourceFile:45)
+	at net.minecraft.pathfinding.PathNavigator.func_225464_a(PathNavigator.java:121)
+	at net.minecraft.pathfinding.PathNavigator.func_179680_a(PathNavigator.java:97)
+	at net.minecraft.pathfinding.GroundPathNavigator.func_179680_a(SourceFile:65)
+	at net.minecraft.pathfinding.PathNavigator.func_225466_a(PathNavigator.java:87)
+	at net.minecraft.pathfinding.PathNavigator.func_75492_a(PathNavigator.java:133)
+	at net.minecraft.entity.ai.goal.FleeSunGoal.func_75249_e(SourceFile:67)
+	at net.minecraft.entity.passive.FoxEntity$FindShelterGoal.func_75249_e(FoxEntity.java:870)
+	at net.minecraft.entity.ai.goal.PrioritizedGoal.func_75249_e(SourceFile:41)
+	at net.minecraft.entity.ai.goal.GoalSelector.func_220877_a(SourceFile:75)
+	at net.minecraft.entity.ai.goal.GoalSelector$$Lambda$3419/1456358323.accept(Unknown Source)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+	at java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:485)
+	at net.minecraft.entity.ai.goal.GoalSelector.func_75774_a(SourceFile:69)
+	at net.minecraft.entity.MobEntity.func_70626_be(MobEntity.java:590)
+	at net.minecraft.entity.LivingEntity.func_70636_d(LivingEntity.java:2186)
+	at net.minecraft.entity.MobEntity.func_70636_d(MobEntity.java:460)
+	at net.minecraft.entity.AgeableEntity.func_70636_d(SourceFile:140)
+	at net.minecraft.entity.passive.AnimalEntity.func_70636_d(SourceFile:44)
+	at net.minecraft.entity.passive.FoxEntity.func_70636_d(FoxEntity.java:204)
+	at net.minecraft.entity.LivingEntity.func_70071_h_(LivingEntity.java:2032)
+	at net.minecraft.entity.MobEntity.func_70071_h_(MobEntity.java:274)
+	at net.minecraft.entity.passive.FoxEntity.func_70071_h_(FoxEntity.java:475)
+	at net.minecraft.world.server.ServerWorld.func_217479_a(ServerWorld.java:587)
+	at net.minecraft.world.server.ServerWorld$$Lambda$3407/565647961.accept(Unknown Source)
+	at net.minecraft.world.World.func_217390_a(World.java:684)
+	at net.minecraft.world.server.ServerWorld.func_72835_b(ServerWorld.java:394)
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:829)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:324)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:764)
+
+-- Thread Dump --
+Details:
+	Threads: "Server-Worker-1315" Id=1354 TIMED_WAITING on java.util.concurrent.ForkJoinPool@568d1e6a
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@568d1e6a
+	at java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1824)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1693)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+
+
+"Netty Epoll Server IO #1" Id=34 RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait0(Native Method)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:114)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:239)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:256)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+"Server Watchdog" Id=33 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:454)
+	at net.minecraft.server.dedicated.ServerHangWatchdog.run(ServerHangWatchdog.java:37)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+"Thread-6" Id=32 RUNNABLE (in native)
+	at sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at sun.nio.fs.LinuxWatchService.access$600(LinuxWatchService.java:47)
+	at sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+"Netty Epoll Server IO #0" Id=30 RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait0(Native Method)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:114)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:239)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:256)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+"ObjectCleanerThread" Id=29 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@584aeacb
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@584aeacb
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at io.netty.util.internal.ObjectCleaner$1.run(ObjectCleaner.java:54)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+"Server console handler" Id=24 RUNNABLE
+	at java.io.FileInputStream.read0(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:207)
+	at org.jline.terminal.impl.AbstractPty$PtyInputStream.read(AbstractPty.java:73)
+	at org.jline.utils.NonBlockingInputStream.read(NonBlockingInputStream.java:62)
+	at org.jline.utils.NonBlocking$NonBlockingInputStreamReader.read(NonBlocking.java:168)
+	at org.jline.utils.NonBlockingReader.read(NonBlockingReader.java:57)
+	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:133)
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:110)
+	...
+
+
+"DestroyJavaVM" Id=23 RUNNABLE
+
+
+"Server thread" Id=20 RUNNABLE
+	at net.minecraft.network.datasync.EntityDataManager.func_187225_a(EntityDataManager.java:118)
+	at net.minecraft.entity.Entity.func_70083_f(Entity.java:1925)
+	at net.minecraft.entity.Entity.func_70093_af(Entity.java:1844)
+	at net.minecraft.util.math.shapes.EntitySelectionContext.<init>(EntitySelectionContext.java:33)
+	at net.minecraft.util.math.shapes.ISelectionContext.func_216374_a(ISelectionContext.java:13)
+	at net.minecraft.world.IWorldReader.func_223438_b(IWorldReader.java:141)
+	at net.minecraft.world.IWorldReader.func_217352_b(IWorldReader.java:131)
+	at net.minecraft.world.IWorldReader.func_211156_a(IWorldReader.java:123)
+	...
+
+
+"Server Infinisleeper" Id=21 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:87)
+
+
+"Snooper Timer" Id=19 WAITING on java.util.TaskQueue@5c75751a
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@5c75751a
+	at java.lang.Object.wait(Object.java:502)
+	at java.util.TimerThread.mainLoop(Timer.java:526)
+	at java.util.TimerThread.run(Timer.java:505)
+
+
+"pool-2-thread-1" Id=17 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1977e0f0
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@1977e0f0
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+"Thread-2" Id=16 RUNNABLE (in native)
+	at sun.nio.fs.LinuxWatchService.poll(Native Method)
+	at sun.nio.fs.LinuxWatchService.access$600(LinuxWatchService.java:47)
+	at sun.nio.fs.LinuxWatchService$Poller.run(LinuxWatchService.java:314)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+"Thread-1" Id=15 TIMED_WAITING
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:338)
+	at com.electronwill.nightconfig.core.file.FileWatcher$WatcherThread.run(FileWatcher.java:190)
+
+
+"Signal Dispatcher" Id=4 RUNNABLE
+
+
+"Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@2737c3fa
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@2737c3fa
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+
+
+"Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@28a47965
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@28a47965
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+
+
+Stacktrace:
+	at net.minecraft.server.dedicated.ServerHangWatchdog.run(ServerHangWatchdog.java:52)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.14.4
+	Minecraft Version ID: 1.14.4
+	Operating System: Linux (amd64) version 4.19.0-8-cloud-amd64
+	Java Version: 1.8.0_252-ea, Debian
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Debian
+	Memory: 391251944 bytes (373 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	CPUs: 1
+	JVM Flags: 2 total; -Xmx1G -Xms1G
+	ModLauncher: 4.1.0+62+5bfa59b
+	ModLauncher launch target: fmlserver
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/eventbus-1.0.0-service.jar eventbus PLUGINSERVICE 
+		/forge-1.14.4-28.2.3.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.14.4-28.2.3.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-1.0.5-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.14.4-28.2.3.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.14.4-28.2.3.jar runtimedistcleaner PLUGINSERVICE 
+		/forge-1.14.4-28.2.3.jar fml TRANSFORMATIONSERVICE 
+	FML: 28.2
+	Forge: net.minecraftforge:28.2.3
+	FML Language Providers: 
+		javafml@28.2
+		minecraft@1
+	Mod List: 
+		forge-1.14.4-28.2.3-server.jar Minecraft {minecraft@1.14.4 DONE}
+		forge-1.14.4-28.2.3-universal.jar Forge {forge@28.2.3 DONE}
+	Player Count: 5 / 20; [ServerPlayerEntity['hectorandac'/212, l='world', x=-9.71, y=42.00, z=-27.83], ServerPlayerEntity['eddom3006'/22680, l='world', x=8.97, y=40.99, z=-5.17], ServerPlayerEntity['NeidyPernia'/50303, l='world', x=20.94, y=70.54, z=-178.30], ServerPlayerEntity['Gabrielaralonzo'/58484, l='world', x=1.73, y=45.48, z=-29.99], ServerPlayerEntity['Luisc74'/33602, l='world', x=-10.45, y=42.00, z=-27.80]]
+	Data Packs: vanilla, mod:forge
+	Is Modded: Definitely; Server brand changed to 'forge'
+	Type: Dedicated Server (map_server.txt)

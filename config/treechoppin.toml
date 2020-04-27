@@ -1,0 +1,31 @@
+
+[leaves]
+	#Add the content of the Tag minecraft:leaves as valid Leaves
+	useTagLeaves = true
+	#Add the registry name of blocks here that should count as Leaves
+	leaves = []
+
+[axes]
+	#Add the registry name of Axes here that should work with Tree Choppin
+	#Axes in this list WILL NOT take damage on use
+	axesUndamageable = []
+	#Add the registry name of Axes here that should work with Tree Choppin
+	#Axes in this list WILL take damage on use
+	axesDamageable = ["minecraft:wooden_axe", "minecraft:stone_axe", "minecraft:iron_axe", "minecraft:diamond_axe"]
+
+[options]
+	#Cut down leaves and logs
+	decayLeaves = true
+	#Automaticly plant sapling on tree chop
+	plantSapling = true
+	#Ignore Sneaking when chopping trees
+	disableShift = false
+	#Only chop down trees when sneaking
+	reverseShift = false
+
+[logs]
+	#Add the contents of the Tag minecraft:logs as valid Logs
+	useTagLogs = true
+	#Add the registry name of blocks here that should count as Logs
+	logs = []
+
