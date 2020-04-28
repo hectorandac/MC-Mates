@@ -89,6 +89,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/mossy_cobblestone": {
+    "criteria": {
+      "has_vine": "2020-04-27 22:22:33 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_andesite_stairs": {
     "criteria": {
       "has_polished_andesite": "2020-04-26 21:53:12 +0000"
@@ -473,6 +479,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/lime_dye": {
+    "criteria": {
+      "has_white_dye": "2020-04-27 23:22:50 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/glass": {
     "criteria": {
       "has_sand": "2020-04-26 02:51:34 +0000"
@@ -494,6 +506,12 @@
   "minecraft:recipes/combat/bow": {
     "criteria": {
       "has_string": "2020-04-25 05:29:54 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/magenta_dye_from_blue_red_white_dye": {
+    "criteria": {
+      "has_white_dye": "2020-04-27 23:22:50 +0000"
     },
     "done": true
   },
@@ -596,6 +614,12 @@
   "minecraft:recipes/transportation/minecart": {
     "criteria": {
       "has_iron_ingot": "2020-04-26 21:39:59 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/yellow_dye_from_sunflower": {
+    "criteria": {
+      "has_double_plant": "2020-04-28 00:28:37 +0000"
     },
     "done": true
   },
@@ -938,6 +962,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/light_blue_dye_from_blue_white_dye": {
+    "criteria": {
+      "has_white_dye": "2020-04-27 23:22:50 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/green_carpet_from_white_carpet": {
     "criteria": {
       "has_white_carpet": "2020-04-25 00:01:34 +0000"
@@ -1049,6 +1079,12 @@
   "minecraft:recipes/food/cooked_porkchop_from_campfire_cooking": {
     "criteria": {
       "has_porkchop": "2020-04-25 23:27:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pink_dye_from_red_white_dye": {
+    "criteria": {
+      "has_white_dye": "2020-04-27 23:22:50 +0000"
     },
     "done": true
   },
@@ -1472,6 +1508,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/gray_dye": {
+    "criteria": {
+      "has_white_dye": "2020-04-27 23:22:50 +0000"
+    },
+    "done": true
+  },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:forest": "2020-04-24 22:49:45 +0000",
@@ -1653,6 +1695,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/light_gray_dye_from_gray_white_dye": {
+    "criteria": {
+      "has_white_dye": "2020-04-27 23:22:50 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/brick_slab": {
     "criteria": {
       "has_brick_block": "2020-04-25 01:05:10 +0000"
@@ -1697,7 +1745,9 @@
   },
   "minecraft:husbandry/complete_catalogue": {
     "criteria": {
-      "textures/entity/cat/white.png": "2020-04-25 01:21:07 +0000"
+      "textures/entity/cat/white.png": "2020-04-25 01:21:07 +0000",
+      "textures/entity/cat/tabby.png": "2020-04-27 21:49:18 +0000",
+      "textures/entity/cat/persian.png": "2020-04-27 21:49:29 +0000"
     },
     "done": false
   },
@@ -1812,6 +1862,12 @@
   "minecraft:recipes/misc/white_dye_from_lily_of_the_valley": {
     "criteria": {
       "has_white_flower": "2020-04-27 01:35:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/light_gray_dye_from_black_white_dye": {
+    "criteria": {
+      "has_white_dye": "2020-04-27 23:22:50 +0000"
     },
     "done": true
   },
