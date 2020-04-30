@@ -12,20 +12,8 @@
     "bypassesPlayerLimit": false
   },
   {
-    "uuid": "50ca22e8-46d0-3a60-a673-0ec03677d03b",
-    "name": "eddom3006",
-    "level": 4,
-    "bypassesPlayerLimit": false
-  },
-  {
     "uuid": "b2031db0-f869-3923-9b4a-601edea8033c",
     "name": "MinecrafterRay",
-    "level": 4,
-    "bypassesPlayerLimit": false
-  },
-  {
-    "uuid": "675f93ec-ef61-32a0-958f-7e8c2185f81e",
-    "name": "NeidyPernia",
     "level": 4,
     "bypassesPlayerLimit": false
   }
